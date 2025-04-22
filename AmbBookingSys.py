@@ -4,7 +4,7 @@ from datetime import datetime
 
 # In-memory storage for bookings
 bookings = []
-
+#this is to generate booking id 
 def generate_booking_id():
     return str(uuid.uuid4())[:8]
 
@@ -32,7 +32,7 @@ def request_ambulance():
     print(f"📄 Booking ID: {booking_id}")
     print(f"📍 Location: {location}")
     print(f"🕒 Time: {timestamp}\n")
-
+#this func is to view bookings
 def view_bookings():
     if not bookings:
         print("\n⚠ No bookings found.")
